@@ -62,10 +62,11 @@ main {
     background: rgba(0,0,0,0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
-    height: 80%;
+    height: 100%;
+   
 }
 
-/****************************** Equipamentos *****/
+
 
 .equipamentos {
     flex-basis: 32%;
@@ -149,8 +150,6 @@ main {
 }
 
 
-
-/****************************** Estatísticas *****/
 .estatisticas {
     flex-basis: 23%;
     padding: 2em 2em 0;
