@@ -50,8 +50,30 @@ function manipulaDados(operacao, controle) {
         peca.value = parseInt(peca.value) + 1
     }
 }
+
 function atualizaEstatisticas(peca) {
-    estatisticas.forEach( (elemento) => {
+    estatisticas.forEach((elemento) => {
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
     })
 }
+
+var imagens = [
+    "amarelo.png",
+    "azul.png",
+    "branco.png",
+    "preto.png",
+    "rosa.png",
+    "vermelho.png"
+];
+
+function trocar() {
+    var img = document.getElementById("clickImagem");
+    var img_src = img.src;
+   
+    var img_idx = imagens.findIndex(item => item.includes(img_src.split('/')[img_src.split('/').length-1]));
+    
+    var posicao = img_idx == imagens.length - 1 ? 0 : img_idx + 1
+    var nome_imagem = imagens[posicao]
+    
+    img.src = "./img/robô-img/"+nome_imagem
+}  
