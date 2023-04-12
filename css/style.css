@@ -84,7 +84,7 @@ main {
 }
 
 .montador-conteudo {
-  padding: 2em 10%;
+  padding: 1em 10%;
 }
 
 .peca {
@@ -245,17 +245,20 @@ main {
 .robotron{
     cursor: pointer; 
 }
-
-
-a  {
-  background-color: #555555;
+#click{
+  text-decoration: none;
+  white-space: pre-wrap;
+  width:1px;
+  word-wrap: break-word;
   border-radius: 7px;
   color: white;
-  padding: 20px 10px;
-  text-align: center;
+  padding:21px 26px;
+  text-align:center;
   font-size: 20px;
-  opacity: 0.6;
   cursor: pointer;
   box-shadow: 0 9px #999;
- 
+  background: rgba(0, 0, 0, 0.6);
+  clip-path: polygon( calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0 );
+  height: 100%;
+  border-left: 5px solid var(--main-cinza);
 }
