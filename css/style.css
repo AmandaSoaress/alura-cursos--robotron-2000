@@ -242,23 +242,94 @@ main {
     margin: 10vh auto;
   }
 }
-.robotron{
-    cursor: pointer; 
+.robotron {
+  cursor: pointer;
 }
-#click{
+#click {
   text-decoration: none;
   white-space: pre-wrap;
-  width:1px;
+  width: 1px;
   word-wrap: break-word;
   border-radius: 7px;
   color: white;
-  padding:21px 26px;
-  text-align:center;
+  padding: 21px 26px;
+  text-align: center;
   font-size: 20px;
   cursor: pointer;
   box-shadow: 0 9px #999;
   background: rgba(0, 0, 0, 0.6);
-  clip-path: polygon( calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0 );
+  clip-path: polygon(
+    calc(100% - 30px) 0,
+    100% 30px,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    30px 100%,
+    0 calc(100% - 30px),
+    0 30px,
+    30px 0
+  );
   height: 100%;
   border-left: 5px solid var(--main-cinza);
+}
+@media (max-width: 800px) {
+  body {
+    font-size: 13px;
+  }
+  .robo {
+    height: 53%;
+    position: absolute;
+    margin-top: 454px;
+    margin-left: -82px;
+  }
+  .montador-conteudo {
+    padding: 1px 1px;
+    margin-left: 21px;
+    font-size: 9px;
+    margin-right: 25px;
+    margin-top: -54px;
+    height: 69%;
+  }
+  .producao {
+    padding: 0em;
+    margin-top: 21px;
+    margin-right: 9px;
+    font-size: 2em;
+    text-transform: uppercase;
+    float: right;
+    border: 1px solid var(--main-branco);
+    background: var(--main-branco);
+    clip-path: polygon(
+      100% 0,
+      100% calc(100% - 30px),
+      calc(100% - 30px) 100%,
+      0 100%,
+      0 0 cursor: pointer;
+   
+    );
+   
+  }
+  .estatisticas {
+    flex-basis: 8%;
+    padding: 2em 2em 0;
+    height: 57%;
+    font-size: 9px;
+    margin-left: 2px;
+    margin-top: -51px;
+  }
+  #click { 
+    border-left: 5px solid var(--main-cinza);
+    word-wrap: break-word;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+    background: rgba(0, 0, 0, 0.6);
+    width: 1px;;
+    margin-top: -37px;
+    margin-left: -11px;
+    width: -webkit-fill-available;
+    height: fit-content;
+  }
 }
